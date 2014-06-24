@@ -9,5 +9,5 @@ Usage:
 
 `[categories orderby=count]`
 
-Will display a link to the category with Id 1. The link text will be
-the category's name.
+Will display links to all the categories and order them by number of
+posts in each category.

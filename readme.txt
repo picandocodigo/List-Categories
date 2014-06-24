@@ -13,10 +13,10 @@ Simple plugin to display categories in any post or page with a shortcode. It's b
 
 Usage:
 
-`[categories id=1]`
+`[categories orderby=count]`
 
-Will display a link to the category with Id 1. The link text will be
-the category's name.
+Will display links to all the categories and order them by number of
+posts in each category.
 
 ==Installation==
 
