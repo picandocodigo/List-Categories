@@ -52,5 +52,6 @@ No questions so far
 
 ==Changelog==
 
-0.1
+= 0.1 =
+
  * First version based on [this GitHub issue](https://github.com/picandocodigo/List-Category-Posts/issues/106)
