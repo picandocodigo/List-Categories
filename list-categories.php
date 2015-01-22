@@ -61,5 +61,3 @@ class ListCategories{
 }
 
 add_shortcode( 'categories', array('ListCategories', 'list_categories') );
-
-?>
