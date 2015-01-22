@@ -3,12 +3,13 @@ Contributors: fernandobt
 Donate Link: http://picandocodigo.net/programacion/wordpress/list-category-posts-wordpress-plugin-english/#support
 Tags: list, categories, cms
 Requires at least: 3.3
-Tested up to: 3.9.1
+Tested up to: 4.1
 Stable tag: 0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
+
 Simple plugin to display categories in any post or page with a shortcode. It's basically a shortcode API interface to the [wp_list_categories](http://codex.wordpress.org/Template_Tags/wp_list_categories) WordPress function.
 
 Usage:
@@ -47,8 +48,24 @@ By default, the usage shows:
 
 See [wp_list_categories](http://codex.wordpress.org/Template_Tags/wp_list_categories) for usage.
 
-==FAQ==
-No questions so far
+==Markup and Styling of Category Lists==
+
+Taken from the [wp_list_categories official documentation](http://codex.wordpress.org/Template_Tags/wp_list_categories#Markup_and_Styling_of_Category_Lists).
+
+By default, wp_list_categories() generates nested unordered lists (ul) within a single list item (li) titled "Categories".
+
+You can remove the outermost item and list by setting the title_li parameter to an empty string. You'll need to wrap the output in an ordered list (ol) or unordered list yourself (see the examples above). If you don't want list output at all, set the style parameter to none.
+
+You can style the output with these CSS selectors :
+
+`
+li.categories { ... }  /* outermost list item */
+li.cat-item { ... }
+li.cat-item-7 { ... }  /* category ID #7, etc */
+li.current-cat { ... }
+li.current-cat-parent { ... }
+ul.children { ... }
+`
 
 ==Changelog==
 
