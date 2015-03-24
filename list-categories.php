@@ -5,11 +5,11 @@
   Description: Simple plugin to display categories in any post or page
   with a shortcode. It's basically a shortcode API interface to the
   wp_list_categories WordPress function.
-  Version: 0.1
+  Version: 0.2
   Author: Fernando Briano
   Author URI: http://picandocodigo.net/
 
-  Copyright 2014  Fernando Briano  (email : fernando@picandocodigo.net)
+  Copyright 2014-2015  Fernando Briano  (email : fernando@picandocodigo.net)
 
   This program is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -56,7 +56,11 @@ class ListCategories{
       ), $atts
     );
 
-    return wp_list_categories($atts);
+    ob_start();
+    wp_list_categories($atts);
+    $output = ob_get_contents();
+    ob_end_clean();
+    return $output;
   }
 }
 
