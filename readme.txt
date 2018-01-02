@@ -67,6 +67,17 @@ li.current-cat-parent { ... }
 ul.children { ... }
 `
 
+==Show categories list in columns==
+
+For outputting the list into columns, you can use [CSS’s multicolumns](https://www.w3.org/TR/css-multicol-1/). Since by default the list is printed as an unordered list with the “categories” class, you can add this to your CSS:
+
+`
+.categories{
+    column-count: 5;
+    column-gap: 50px;
+}
+`
+
 ==Changelog==
 
 = 0.2 =
