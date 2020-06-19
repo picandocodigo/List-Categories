@@ -5,11 +5,11 @@
   Description: Simple plugin to display categories in any post or page
   with a shortcode. It's basically a shortcode API interface to the
   wp_list_categories WordPress function.
-  Version: 0.2
+  Version: 0.3
   Author: Fernando Briano
   Author URI: http://picandocodigo.net/
 
-  Copyright 2014-2015  Fernando Briano  (email : fernando@picandocodigo.net)
+  Copyright 2014-2020  Fernando Briano  (email : fernando@picandocodigo.net)
 
   This program is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -29,30 +29,31 @@ class ListCategories{
   static function list_categories($atts, $content = null) {
     $atts = shortcode_atts(
       array(
-        'show_option_all'    => '',
-        'orderby'            => 'name',
-        'order'              => 'ASC',
-        'style'              => 'list',
-        'show_count'         => 0,
-        'hide_empty'         => 1,
-        'use_desc_for_title' => 1,
-        'child_of'           => 0,
-        'feed'               => '',
-        'feed_type'          => '',
-        'feed_image'         => '',
-        'exclude'            => '',
-        'exclude_tree'       => '',
-        'include'            => '',
-        'hierarchical'       => 1,
-        'title_li'           => __( 'Categories' ),
-        'show_option_none'   => __( 'No categories' ),
-        'number'             => null,
-        'echo'               => 1,
-        'depth'              => 0,
-        'current_category'   => 0,
-        'pad_counts'         => 0,
-        'taxonomy'           => 'category',
-        'walker'             => null
+        'child_of'            => 0,
+        'current_category'    => 0,
+        'depth'               => 0,
+        'echo'                => 1,
+        'exclude'             => '',
+        'exclude_tree'        => '',
+        'feed'                => '',
+        'feed_image'          => '',
+        'feed_type'           => '',
+        'hide_empty'          => 1,
+        'hide_title_if_empty' => false,
+        'hierarchical'        => 1,
+        'include'             => '',
+        'number'              => null,
+        'order'               => 'ASC',
+        'orderby'             => 'name',
+        'pad_counts'          => 0,
+        'show_count'          => 0,
+        'show_option_all'     => '',
+        'show_option_none'    => __( 'No categories' ),
+        'style'               => 'list',
+        'taxonomy'            => 'category',
+        'title_li'            => __( 'Categories' ),
+        'use_desc_for_title'  => 1,
+        'walker'              => null,
       ), $atts
     );
 

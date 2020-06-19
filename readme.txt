@@ -3,8 +3,8 @@ Contributors: fernandobt
 Donate Link: http://picandocodigo.net/programacion/wordpress/list-category-posts-wordpress-plugin-english/#support
 Tags: list, categories, cms
 Requires at least: 3.3
-Tested up to: 5.0
-Stable tag: 0.2
+Tested up to: 5.4.2
+Stable tag: 0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,8 +16,9 @@ Usage:
 
 `[categories orderby=count]`
 
-Will display links to all the categories and order them by number of
-posts in each category.
+Will display links to all the categories and order them by number of posts in each category.
+
+You can also **list tags** or any other WordPress taxonomy. You need to pass a value to the `taxonomy` parameter. For example to list tags: `[categories taxonomy=post_tag title_li="Tags"]`.
 
 ==Installation==
 
@@ -79,6 +80,11 @@ For outputting the list into columns, you can use [CSS’s multicolumns](https:/
 `
 
 ==Changelog==
+
+= 0.3 =
+
+* Tested up to the latest version of WordPress
+* Adds note about taxonomies, updates parameters
 
 = 0.2 =
 
