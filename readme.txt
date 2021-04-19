@@ -3,14 +3,14 @@ Contributors: fernandobt
 Donate Link: http://picandocodigo.net/programacion/wordpress/list-category-posts-wordpress-plugin-english/#support
 Tags: list, categories, cms
 Requires at least: 3.3
-Tested up to: 5.4.2
-Stable tag: 0.3
+Tested up to: 5.7.1
+Stable tag: 0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-Simple plugin to display categories in any post or page with a shortcode. It's basically a shortcode API interface to the [wp_list_categories](http://codex.wordpress.org/Template_Tags/wp_list_categories) WordPress function.
+Simple plugin to display categories in any post or page with a shortcode. It's basically a shortcode API interface to the [wp_list_categories](http://codex.wordpress.org/Template_Tags/wp_list_categories) WordPress function. So you can use any parameter from `wp_list_categories` in the shortcode.
 
 Usage:
 
@@ -80,6 +80,10 @@ For outputting the list into columns, you can use [CSS’s multicolumns](https:/
 `
 
 ==Changelog==
+
+= 0.4 =
+
+* Tested up to the latest version of WordPress.
 
 = 0.3 =
 

@@ -5,7 +5,7 @@
   Description: Simple plugin to display categories in any post or page
   with a shortcode. It's basically a shortcode API interface to the
   wp_list_categories WordPress function.
-  Version: 0.3
+  Version: 0.4
   Author: Fernando Briano
   Author URI: http://picandocodigo.net/
 
