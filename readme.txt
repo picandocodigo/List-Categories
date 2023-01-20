@@ -10,7 +10,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-Simple plugin to display categories in any post or page with a shortcode. It's basically a shortcode API interface to the [wp_list_categories](http://codex.wordpress.org/Template_Tags/wp_list_categories) WordPress function. So you can use any parameter from `wp_list_categories` in the shortcode.
+Simple plugin to display categories in any post or page with a shortcode. It's basically a shortcode API interface to the [wp_list_categories](https://developer.wordpress.org/reference/functions/wp_list_categories/) WordPress function. This means given any of the [parameters](https://developer.wordpress.org/reference/functions/wp_list_categories/#parameters) accepted by the function, you can pass it in as a shortcode parameter to the `categories` shortcode.
 
 Usage:
 
@@ -47,7 +47,7 @@ By default, the usage shows:
   * All categories.
   * The list is rendered using a new walker object of the the Walker_Category class
 
-See [wp_list_categories](http://codex.wordpress.org/Template_Tags/wp_list_categories) for usage.
+See [wp_list_categories](https://developer.wordpress.org/reference/functions/wp_list_categories/) for usage.
 
 ==Markup and Styling of Category Lists==
 
