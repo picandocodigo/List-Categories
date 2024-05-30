@@ -3,10 +3,11 @@ Contributors: fernandobt
 Donate Link: http://picandocodigo.net/programacion/wordpress/list-category-posts-wordpress-plugin-english/#support
 Tags: list, categories, cms
 Requires at least: 3.3
-Tested up to: 6.1.1
-Stable tag: 0.4
+Tested up to: 6.5.3
+Stable tag: 0.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Simple plugin to display categories in any post or page with a shortcode.
 
 == Description ==
 

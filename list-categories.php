@@ -2,14 +2,12 @@
 /*
   Plugin Name: List Categories
   Plugin URI: https://github.com/picandocodigo/List-Categories
-  Description: Simple plugin to display categories in any post or page
-  with a shortcode. It's basically a shortcode API interface to the
-  wp_list_categories WordPress function.
-  Version: 0.4
+  Description: Simple plugin to display categories in any post or page with a shortcode. It's basically a shortcode API interface to the wp_list_categories WordPress function.
+  Version: 0.5
   Author: Fernando Briano
-  Author URI: http://picandocodigo.net/
+  Author URI: https://picandocodigo.net/
 
-  Copyright 2014-2020  Fernando Briano  (email : fernando@picandocodigo.net)
+  Copyright 2014-2024  Fernando Briano  (email : fernando@picandocodigo.net)
 
   This program is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -56,7 +54,7 @@ class ListCategories{
         'walker'              => null,
       ), $atts
     );
-
+    $atts['feed'] = esc_attr($atts['feed']);
     ob_start();
     wp_list_categories($atts);
     $output = ob_get_contents();
